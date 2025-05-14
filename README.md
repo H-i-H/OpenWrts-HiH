@@ -67,16 +67,16 @@
 <br>
 
 ### 🎯固件默认设置
-- 路由器地址: `192.168.10.1`
+- 路由器地址: `11.11.11.100`
 - 默认用户名: `root`
-- 默认密码  : `password`
+- 默认密码  : `无`
 
 <br>
 
 ## 固件特性
-⏰ 固件编译改为`周更`(稳定为主，减少资源浪费)
+#⏰ 固件编译改为`周更`(稳定为主，减少资源浪费)
 
-✨ iStore应用商店 [AppStore](./assets/images/appstore.png)
+#✨ iStore应用商店 [AppStore](./assets/images/appstore.png)
 
 ✨ 自带常用的插件
 
@@ -175,23 +175,23 @@ Standard.conf / Lite.conf - 主要用于配置固件插件应用
 <br>
 
 ## 固件预览
-**主界面(主题一)：**
-![主界面](./assets/images/openwrt.png)
+#**主界面(主题一)：**
+#![主界面](./assets/images/openwrt.png)
 
-**应用商店/插件**
-![应用商店/插件](./assets/images/appstore.png)
+#**应用商店/插件**
+#![应用商店/插件](./assets/images/appstore.png)
 
-**服务/插件：**
-![服务/插件](./assets/images/service.png)
+#**服务/插件：**
+#![服务/插件](./assets/images/service.png)
 
-**网络：**
-![网络](./assets/images/network.png)
+#**网络：**
+#![网络](./assets/images/network.png)
 
-**经典主题二：**
-![登录页](./assets/images/infinityfreedom-theme.png)
+#**经典主题二：**
+#![登录页](./assets/images/infinityfreedom-theme.png)
 
-**主界面：**
-![主界面](./assets/images/infinityfreedom-theme-main.png)
+#**主界面：**
+#![主界面](./assets/images/infinityfreedom-theme-main.png)
 
 
 ## 版权说明
@@ -207,17 +207,17 @@ Standard.conf / Lite.conf - 主要用于配置固件插件应用
 - [P3TERX/Actions-OpenWrt](https://github.com/bigbugcc/OpenWrts)
 
 ## Stargazers over time
-[![Stargazers over time](https://starchart.cc/bigbugcc/OpenWrts.svg)](https://starchart.cc/bigbugcc/OpenWrts)
+[![Stargazers over time](https://starchart.cc/H-i-H/OpenWrts-HiH.svg)](https://starchart.cc/H-i-H/OpenWrts-HiH)
 
 <!-- links -->
 [your-project-path]:https://github.com/H-i-H/OpenWrts-HiH/
-[contributors-shield]: https://img.shields.io/github/contributors/bigbugcc/OpenWrts?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/H-i-H/OpenWrts-HiH?style=flat-square
 [contributors-url]: https://github.com/H-i-H/OpenWrts-HiH/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/bigbugcc/OpenWrts?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/H-i-H/OpenWrts-HiH?style=flat-square
 [forks-url]: https://github.com/H-i-H/OpenWrts-HiH/network/members
-[stars-shield]: https://img.shields.io/github/stars/bigbugcc/OpenWrts?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/H-i-H/OpenWrts-HiH?style=flat-square
 [stars-url]: https://github.com/H-i-H/OpenWrts-HiH/stargazers
-[issues-shield]: https://img.shields.io/github/issues/bigbugcc/OpenWrts?style=flat-square
-[issues-url]: https://img.shields.io/github/issues/bigbugcc/OpenWrts
-[license-shield]: https://img.shields.io/github/license/bigbugcc/OpenWrts?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/H-i-H/OpenWrts-HiH?style=flat-square
+[issues-url]: https://img.shields.io/github/issues/H-i-H/OpenWrts-HiH
+[license-shield]: https://img.shields.io/github/license/H-i-H/OpenWrts-HiH?style=flat-square
 [license-url]: https://github.com/H-i-H/OpenWrts-HiH/blob/master/LICENSE

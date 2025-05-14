@@ -10,21 +10,21 @@
 <br />
 
 <p align="center">
-  <a href="https://github.com/bigbugcc/OpenWrts">
+  <a href="https://github.com/H-i-H/OpenWrts-HiH">
     <img src="./assets/images/action1.jpg" alt="Logo" width="500" />
   </a>
   <h3 align="center">Openwrt/LEDE 云编译(带应用商店)</h3>
   <p align="center">
-    👉 每周定时自动拉取Openwrt最新源码编译，自动发布到 [<a herf="https://github.com/bigbugcc/OpenWrts/releases"> Releases </a>]👈
+    👉 自动拉取Openwrt最新源码编译，自动发布到 [<a herf="https://github.com/H-i-H/OpenWrts-HiH/releases"> Releases </a>]👈
     <br />
-    <a href="https://github.com/bigbugcc/OpenWrts"><strong>探索本项目的文档 »</strong></a>
+    <a href="https://github.com/H-i-H/OpenWrts-HiH"><strong>探索本项目的文档 »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/bigbugcc/OpenWrts/releases">下载地址</a>
+    <a href="https://github.com/H-i-H/OpenWrts-HiH/releases">下载地址</a>
     ·
-    <a href="https://github.com/bigbugcc/OpenWrts/actions">Action</a>
+    <a href="https://github.com/H-i-H/OpenWrts-HiH/actions">Action</a>
     ·
-    <a href="https://github.com/bigbugcc/OpenWrts/issues">提出新特性</a>
+    <a href="https://github.com/H-i-H/OpenWrts-HiH/issues">提出新特性</a>
   </p>
 
 </p>
@@ -52,17 +52,17 @@
 🎯 带应用商店的固件：`x86Lite`
 |           支持的设备        |         固类别         |        Action         |            状态          |              下载页          |
 | :------------------------: | :---------------------: | :-------------------: | :-------------------: | :--------------------------: |
-|             x86_64                    |  [LEDE](https://github.com/coolsnowwolf/lede) |[🍕](https://github.com/bigbugcc/OpenWrts/actions/workflows/x86_64.yml) | ![x86_64](https://github.com/bigbugcc/openwrts/actions/workflows/x86_64.yml/badge.svg) |  [✔](https://github.com/bigbugcc/OpenWrts/releases) |
-| x86_64Lite | [LEDE](https://github.com/coolsnowwolf/lede) |[🍕](https://github.com/bigbugcc/OpenWrts/actions/workflows/x86_64Lite.yml) | ![x86_64Lite](https://github.com/bigbugcc/openwrts/actions/workflows/x86_64Lite.yml/badge.svg) | [✔](https://github.com/bigbugcc/OpenWrts/releases) |
-|             树莓派 3B/3B+             | [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/bigbugcc/OpenWrts/actions/workflows/RaspberryPi3.yml) | ![RaspberryPi3](https://github.com/bigbugcc/openwrts/actions/workflows/RaspberryPi3.yml/badge.svg) | [✔](https://github.com/bigbugcc/OpenWrts/releases) |
-|             树莓派 4B             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/bigbugcc/OpenWrts/actions/workflows/RaspberryPi4.yml) | ![RaspberryPi4](https://github.com/bigbugcc/openwrts/actions/workflows/RaspberryPi4.yml/badge.svg) |  [✔](https://github.com/bigbugcc/OpenWrts/releases) |
-|             树莓派 5             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/bigbugcc/OpenWrts/actions/workflows/RaspberryPi5.yml) | ![RaspberryPi5](https://github.com/bigbugcc/openwrts/actions/workflows/RaspberryPi5.yml/badge.svg) |  [✔](https://github.com/bigbugcc/OpenWrts/releases) |
-|             NanoPi R2S             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/bigbugcc/OpenWrts/actions/workflows/Rockchip.yml) | ![R2S](https://github.com/bigbugcc/openwrts/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/bigbugcc/OpenWrts/releases) |
-|             NanoPi R4S             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/bigbugcc/OpenWrts/actions/workflows/Rockchip.yml) | ![R4S](https://github.com/bigbugcc/openwrts/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/bigbugcc/OpenWrts/releases) |
-|             NanoPi R5C             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/bigbugcc/OpenWrts/actions/workflows/Rockchip.yml) | ![R5C](https://github.com/bigbugcc/openwrts/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/bigbugcc/OpenWrts/releases) |
-|             NanoPi R5S             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/bigbugcc/OpenWrts/actions/workflows/Rockchip.yml) | ![R5S](https://github.com/bigbugcc/openwrts/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/bigbugcc/OpenWrts/releases) |
-|             FastRhino R68S             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/bigbugcc/OpenWrts/actions/workflows/Rockchip.yml) | ![R68S](https://github.com/bigbugcc/openwrts/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/bigbugcc/OpenWrts/releases) |
-|             Orange Pi R1 Plus             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/bigbugcc/OpenWrts/actions/workflows/Rockchip.yml) | ![OrangePiR1](https://github.com/bigbugcc/openwrts/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/bigbugcc/OpenWrts/releases) |
+|             x86_64                    |  [LEDE](https://github.com/coolsnowwolf/lede) |[🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64.yml) | ![x86_64](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64.yml/badge.svg) |  [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
+| x86_64Lite | [LEDE](https://github.com/coolsnowwolf/lede) |[🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64Lite.yml) | ![x86_64Lite](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64Lite.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
+|             树莓派 3B/3B+             | [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi3.yml) | ![RaspberryPi3](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi3.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
+|             树莓派 4B             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi4.yml) | ![RaspberryPi4](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi4.yml/badge.svg) |  [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
+|             树莓派 5             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi5.yml) | ![RaspberryPi5](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi5.yml/badge.svg) |  [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
+|             NanoPi R2S             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml) | ![R2S](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
+|             NanoPi R4S             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml) | ![R4S](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
+|             NanoPi R5C             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml) | ![R5C](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
+|             NanoPi R5S             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml) | ![R5S](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
+|             FastRhino R68S             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml) | ![R68S](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
+|             Orange Pi R1 Plus             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml) | ![OrangePiR1](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
 
 <br>
 
@@ -196,7 +196,7 @@ Standard.conf / Lite.conf - 主要用于配置固件插件应用
 
 ## 版权说明
 
-该项目签署了MIT 授权许可，详情请参阅 [LICENSE](https://github.com/bigbugcc/OpenWrts/blob/main/LICENSE)
+该项目签署了MIT 授权许可，详情请参阅 [LICENSE](https://github.com/H-i-H/OpenWrts-HiH/blob/main/LICENSE)
 
 
 ## 项目支持
@@ -204,19 +204,20 @@ Standard.conf / Lite.conf - 主要用于配置固件插件应用
 - [coolsnowwolf/lede](https://github.com/coolsnowwolf/lede)
 - [luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon)
 - [istore](https://github.com/linkease/istore)
+- [P3TERX/Actions-OpenWrt](https://github.com/bigbugcc/OpenWrts)
 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/bigbugcc/OpenWrts.svg)](https://starchart.cc/bigbugcc/OpenWrts)
 
 <!-- links -->
-[your-project-path]:https://github.com/bigbugcc/OpenWrts/
+[your-project-path]:https://github.com/H-i-H/OpenWrts-HiH/
 [contributors-shield]: https://img.shields.io/github/contributors/bigbugcc/OpenWrts?style=flat-square
-[contributors-url]: https://github.com/bigbugcc/OpenWrts/graphs/contributors
+[contributors-url]: https://github.com/H-i-H/OpenWrts-HiH/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/bigbugcc/OpenWrts?style=flat-square
-[forks-url]: https://github.com/bigbugcc/OpenWrts/network/members
+[forks-url]: https://github.com/H-i-H/OpenWrts-HiH/network/members
 [stars-shield]: https://img.shields.io/github/stars/bigbugcc/OpenWrts?style=flat-square
-[stars-url]: https://github.com/bigbugcc/OpenWrts/stargazers
+[stars-url]: https://github.com/H-i-H/OpenWrts-HiH/stargazers
 [issues-shield]: https://img.shields.io/github/issues/bigbugcc/OpenWrts?style=flat-square
 [issues-url]: https://img.shields.io/github/issues/bigbugcc/OpenWrts
 [license-shield]: https://img.shields.io/github/license/bigbugcc/OpenWrts?style=flat-square
-[license-url]: https://github.com/bigbugcc/OpenWrts/blob/master/LICENSE
+[license-url]: https://github.com/H-i-H/OpenWrts-HiH/blob/master/LICENSE

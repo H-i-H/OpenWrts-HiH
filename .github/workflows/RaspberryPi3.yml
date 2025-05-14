@@ -60,6 +60,9 @@ jobs:
         chmod +x $SYS_CONF_SH
         cd openwrt
         $GITHUB_WORKSPACE/$SYS_CONF_SH
+      
+    - name: git pull
+      run: cd openwrt && git pull
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a

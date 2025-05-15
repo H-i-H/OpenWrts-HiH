@@ -49,11 +49,10 @@
 
 
 ## 支持的设备
-🎯 带应用商店的固件：`x86Lite`
+🎯 
 |           支持的设备        |         固类别         |        Action         |            状态          |              下载页          |
 | :------------------------: | :---------------------: | :-------------------: | :-------------------: | :--------------------------: |
 |             x86_64                    |  [LEDE](https://github.com/coolsnowwolf/lede) |[🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64.yml) | ![x86_64](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64.yml/badge.svg) |  [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
-| x86_64Lite | [LEDE](https://github.com/coolsnowwolf/lede) |[🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64Lite.yml) | ![x86_64Lite](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64Lite.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
 |             树莓派 3B/3B+             | [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi3.yml) | ![RaspberryPi3](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi3.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
 |             树莓派 4B             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi4.yml) | ![RaspberryPi4](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi4.yml/badge.svg) |  [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
 |             NanoPi R4S             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml) | ![R4S](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/Rockchip.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |

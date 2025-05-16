@@ -15,3 +15,6 @@
 
 # OpenClash
 # git clone --depth 1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+
+# passwall
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall

@@ -6,7 +6,7 @@ echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >>
 # Hello World
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >> "feeds.conf.default"
 # passwall
-# echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
+echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 # echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
 
 
@@ -18,6 +18,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 
 # 修改默认IP为 11.11.11.100
 sed -i 's/192.168.1.1/11.11.11.100/g' package/base-files/luci2/bin/config_generate
+sed -i 's/192.168.1.1/11.11.11.100/g' package/base-files/files/bin/config_generate
 
 # 加入编译者信息
 sed -i "s/OpenWrt /H-i-H build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings

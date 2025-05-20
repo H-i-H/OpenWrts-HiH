@@ -17,4 +17,4 @@ rm -rf package/lean/luci-theme-design
 git clone -b js https://github.com/gngpp/luci-theme-design.git  package/lean/luci-theme-design
 
 # 修改默认主题新版（需要使用JS版本主题，否则会进不去后台，提示"Unhandled exception during request dispatching"）
-sed -i "s/luci-theme-bootstrap/luci-theme-design/g" feeds/luci/collections/luci-light/Makefile
+# sed -i "s/luci-theme-bootstrap/luci-theme-design/g" feeds/luci/collections/luci-light/Makefile

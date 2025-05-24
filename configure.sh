@@ -9,7 +9,7 @@ echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >>
 
 # passwall
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
-# echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
+echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
 
 # 修改默认主机名
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='Router'' package/lean/default-settings/files/zzz-default-settings
@@ -23,3 +23,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 # 修改默认IP为 11.11.11.100（新版）
 sed -i 's/192.168.1.1/11.11.11.100/g' package/base-files/luci2/bin/config_generate
 sed -i 's/192.168.1.1/11.11.11.100/g' package/base-files/files/bin/config_generate
+
+# 替换默认主题
+# rm -rf package/lean/luci-theme-argon 
+# git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  package/lean/luci-theme-argon

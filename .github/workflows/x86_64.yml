@@ -1,7 +1,7 @@
 name: x86_64
 
 on:
-  repository_dispatch:
+ # repository_dispatch:
   workflow_dispatch:
 
 env:
@@ -9,7 +9,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  EXTERNAL_FILE: configs/luci/Standard.config
+  EXTERNAL_FILE: configs/luci/x86_64.config
   CONFIG_FILE: configs/x86_64.config
   SYS_CONF_SH: configure.sh
   PACKS: package.sh
@@ -33,7 +33,7 @@ jobs:
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* 
         sudo -E apt-get -qq update
-        sudo -E apt-get -qq install $(curl -fsSL https://raw.githubusercontent.com/bigbugcc/openwrts/master/openwrt-env)
+        sudo -E apt-get -qq install $(curl -fsSL https://raw.githubusercontent.com/H-i-H/OpenWrts-HiH/refs/heads/main/openwrt-env)
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
@@ -60,6 +60,9 @@ jobs:
         chmod +x $SYS_CONF_SH
         cd openwrt
         $GITHUB_WORKSPACE/$SYS_CONF_SH
+        
+    - name: git pull
+      run: cd openwrt && git pull
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a

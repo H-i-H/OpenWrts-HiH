@@ -7,18 +7,18 @@ echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-pa
 # 设置luci版本为openwrt-24.10
 sed -i 's/openwrt-23.05/openwrt-24.10/g' feeds.conf.default
 
-#修改默认IP为11.11.11.10
+# 修改默认IP为11.11.11.10
 sed -i 's/192.168.1.1/11.11.11.10/g' package/base-files/luci2/bin/config_generate
 sed -i 's/192.168.1.1/11.11.11.10/g' package/base-files/files/bin/config_generate
 
-#修改默认主题为luci-theme-design
+# 修改默认主题为luci-theme-design
 sed -i "s/luci-theme-bootstrap/luci-theme-design/g" feeds/luci/collections/luci/Makefile
 sed -i "s/luci-theme-bootstrap/luci-theme-design/g" feeds/luci/collections/luci-light/Makefile
 
-#修改默认名称为H-i-H
+# 修改默认名称为H-i-H
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='H-i-H'' package/lean/default-settings/files/zzz-default-settings
 
-#添加编译者信息H-i-H
+# 添加编译者信息H-i-H
 sed -i "s/LEDE/H-i-H build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # 设置为无密码

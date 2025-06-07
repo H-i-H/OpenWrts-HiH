@@ -1,5 +1,5 @@
 # Action Openwrt 云自动编译
-⏰ **每周自动拉取最新源码自动编译**
+⏰ **每周五自动拉取最新源码自动编译**
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -13,9 +13,9 @@
   <a href="https://github.com/H-i-H/OpenWrts-HiH">
     <img src="./assets/images/action1.jpg" alt="Logo" width="500" />
   </a>
-  <h3 align="center">Openwrt/LEDE 云编译(带应用商店)</h3>
+  <h3 align="center">Openwrt/LEDE 云编译</h3>
   <p align="center">
-    👉 每周定时自动拉取Openwrt最新源码编译，自动发布到 [<a herf="https://github.com/H-i-H/OpenWrts-HiH/releases"> Releases </a>]👈
+    👉 每周五定时自动拉取Openwrt最新源码编译，自动发布到 [<a herf="https://github.com/H-i-H/OpenWrts-HiH/releases"> Releases </a>]👈
     <br />
     <a href="https://github.com/H-i-H/OpenWrts-HiH"><strong>探索本项目的文档 »</strong></a>
     <br />
@@ -49,11 +49,9 @@
 
 
 ## 支持的设备
-🎯 带应用商店的固件：`x86Lite`
 |           支持的设备        |         固类别         |        Action         |            状态          |              下载页          |
 | :------------------------: | :---------------------: | :-------------------: | :-------------------: | :--------------------------: |
 |             x86_64                    |  [LEDE](https://github.com/coolsnowwolf/lede) |[🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64.yml) | ![x86_64](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64.yml/badge.svg) |  [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
-| x86_64Lite | [LEDE](https://github.com/coolsnowwolf/lede) |[🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64Lite.yml) | ![x86_64Lite](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/x86_64Lite.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
 |             树莓派 3B/3B+             | [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi3.yml) | ![RaspberryPi3](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi3.yml/badge.svg) | [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
 |             树莓派 4B             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi4.yml) | ![RaspberryPi4](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi4.yml/badge.svg) |  [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
 |             树莓派 5             |  [LEDE](https://github.com/coolsnowwolf/lede) | [🍕](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi5.yml) | ![RaspberryPi5](https://github.com/H-i-H/OpenWrts-HiH/actions/workflows/RaspberryPi5.yml/badge.svg) |  [✔](https://github.com/H-i-H/OpenWrts-HiH/releases) |
@@ -69,42 +67,30 @@
 ### 🎯固件默认设置
 - 路由器地址: `192.168.10.1`
 - 默认用户名: `root`
-- 默认密码  : `password`
+- 默认密码  : `无`
 
 <br>
 
 ## 固件特性
 ⏰ 固件编译改为`周更`(稳定为主，减少资源浪费)
 
-✨ iStore应用商店 [AppStore](./assets/images/appstore.png)
-
 ✨ 自带常用的插件
 
 ✨ Arm集成所有openwrt的USB驱动
 
-✨ ~~集成Python3.x(带pip)环境~~
-
-✨ 集成Docker-CE
-
-✨ ~~集成Node.js(14.xLTS 带npm、yarn)~~
-
-✨ 全新的 [Them](https://github.com/jerrykuku/luci-theme-argon)
+✨ 集成Docker
 
 ✨ x86_64 vmdk固件集成vm-tools
 
 ✨ x86_64 iso格式镜像
 
-✨ x86_64 Lite版本(必要插件&应用商店)
-
 <br>
 
 ## 自带插件
 🍕 默认插件
-- PassWall2 / SSR Plus / OpenClash
+- PassWall
 - AdGuard Home
 - Mentohust
-- ~~luci-app-vssr~~
-- luci-adbyby-plus
 - luci-app-unblockmusic
 - luci-app-ddns
 - luci-app-pushbot (全能推送)
@@ -123,7 +109,6 @@
 - luci-app-docker
 - luci-app-serverchan
 - luci-app-control-timewol (定时wol唤醒)
-- luci-app-aliyundrive-webdav (阿里云盘)
 - luci-app-filebrowser
 - luci-app-nfs   
 ......
@@ -141,23 +126,19 @@ filetree
 │  ├── RaspberryPi4.yml
 │  ├── RaspberryPi5.yml
 │  ├── x86_64.yml
-│  ├── x86_64Lite.yml
 │  ├── update-checker.yml
 ├── /configs/ (配置文件目录)   
 │  ├── /luci/ (app插件配置)   
-│  |  ├── Lite.config (简洁配置)   
-│  |  ├── Standard.config (标准配置 大量插件)
+│  |  ├── xxx.config (配置)
 │  ├── RPi3.config
 │  ├── RPi4.config
 │  ├── RPi5.config
-│  ├── x86_64.config
 │  ├── Rockchip.config
 ├── configure.sh (固件参数修改)
 ├── package.sh (luci-app)
 
 Tips:
 x86.conf | RPi4.config - 该类型配置文件主要为机型配置文件
-Standard.conf / Lite.conf - 主要用于配置固件插件应用 
 ```
 <br>
 
@@ -178,17 +159,11 @@ Standard.conf / Lite.conf - 主要用于配置固件插件应用
 **主界面(主题一)：**
 ![主界面](./assets/images/openwrt.png)
 
-**应用商店/插件**
-![应用商店/插件](./assets/images/appstore.png)
-
 **服务/插件：**
 ![服务/插件](./assets/images/service.png)
 
 **网络：**
 ![网络](./assets/images/network.png)
-
-**经典主题二：**
-![登录页](./assets/images/infinityfreedom-theme.png)
 
 **主界面：**
 ![主界面](./assets/images/infinityfreedom-theme-main.png)
@@ -202,8 +177,7 @@ Standard.conf / Lite.conf - 主要用于配置固件插件应用
 ## 项目支持
 - [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
 - [coolsnowwolf/lede](https://github.com/coolsnowwolf/lede)
-- [luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon)
-- [istore](https://github.com/linkease/istore)
+- [bigbugcc/OpenWrts](https://github.com/bigbugcc/OpenWrts)
 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/H-i-H/OpenWrts-HiH.svg)](https://starchart.cc/H-i-H/OpenWrts-HiH)

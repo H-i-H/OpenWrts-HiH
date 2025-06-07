@@ -1,25 +1,25 @@
 #!/bin/bash
 # Modify default system settings
 
-# 暂时回滚
-sed -i '/^#src-git luci https:\/\/github.com\/coolsnowwolf\/luci$/s/^#//' feeds.conf.default && sed -i '/^src-git luci https:\/\/github.com\/coolsnowwolf\/luci\.git;openwrt-23\.05$/s/^/#/' feeds.conf.default
+# 添加passwall
+echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 
-# 修改默认IP为192.168.10.1
-sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate 
+# 设置luci版本为openwrt-24.10
+sed -i 's/openwrt-23.05/openwrt-24.10/g' feeds.conf.default
 
-# Hello World
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+#修改默认IP为11.11.11.10
+sed -i 's/192.168.1.1/11.11.11.10/g' package/base-files/luci2/bin/config_generate
+sed -i 's/192.168.1.1/11.11.11.10/g' package/base-files/files/bin/config_generate
 
-# luci-theme-infinityfreedom
-echo 'src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git' >>feeds.conf.default
+#修改默认主题为luci-theme-design
+sed -i "s/luci-theme-bootstrap/luci-theme-design/g" feeds/luci/collections/luci/Makefile
+sed -i "s/luci-theme-bootstrap/luci-theme-design/g" feeds/luci/collections/luci-light/Makefile
 
-# passwall
-echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> feeds.conf.default
-echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> feeds.conf.default
+#修改默认名称为H-i-H
+sed -i '/uci commit system/i\uci set system.@system[0].hostname='H-i-H'' package/lean/default-settings/files/zzz-default-settings
 
-# iStore
-echo "src-git istore https://github.com/linkease/istore;main" >> feeds.conf.default
+#添加编译者信息H-i-H
+sed -i "s/LEDE/H-i-H build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
-# 替换默认主题
-rm -rf package/lean/luci-theme-argon 
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  package/lean/luci-theme-argon
+# 设置为无密码
+sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings

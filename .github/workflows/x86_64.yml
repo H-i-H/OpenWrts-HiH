@@ -1,7 +1,7 @@
 name: x86_64
 
 on:
- # repository_dispatch:
+  repository_dispatch:
   workflow_dispatch:
 
 env:

@@ -18,8 +18,8 @@ sed -i "s/luci-theme-bootstrap/luci-theme-design/g" feeds/luci/collections/luci-
 # 修改默认名称为HiH
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='HiH'' package/lean/default-settings/files/zzz-default-settings
 
-# 添加编译者信息H-i-H
-sed -i "s/LEDE/H-i-H build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
+# 添加编译者信息HiH
+sed -i "s/LEDE/HiH build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # 设置为无密码
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings

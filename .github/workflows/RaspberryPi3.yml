@@ -1,7 +1,7 @@
 name: Raspberry Pi3B+
 
 on:
-  repository_dispatch:
+#  repository_dispatch:
   workflow_dispatch:
 
 env:

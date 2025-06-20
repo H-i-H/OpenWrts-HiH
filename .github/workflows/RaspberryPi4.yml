@@ -1,7 +1,7 @@
 name: Raspberry Pi4
 
 on:
-#  repository_dispatch:
+  repository_dispatch:
   workflow_dispatch:
 
 env:

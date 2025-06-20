@@ -3,8 +3,8 @@
 git clone --depth 1 https://github.com/sbwml/luci-app-mentohust package/mentohust
 
 # 修改默认IP为11.11.11.10
-sed -i 's/192.168.1.1/11.11.11.10/g' package/base-files/luci2/bin/config_generate
-sed -i 's/192.168.1.1/11.11.11.10/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/11.11.11.1/g' package/base-files/luci2/bin/config_generate
+sed -i 's/192.168.1.1/11.11.11.1/g' package/base-files/files/bin/config_generate
 
 # 修改默认主题为luci-theme-design
 sed -i "s/luci-theme-bootstrap/luci-theme-design/g" feeds/luci/collections/luci/Makefile

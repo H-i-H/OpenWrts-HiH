@@ -10,10 +10,10 @@ sed -i 's/192.168.1.1/11.11.11.1/g' package/base-files/files/bin/config_generate
 sed -i "s/luci-theme-bootstrap/luci-theme-design/g" feeds/luci/collections/luci/Makefile
 sed -i "s/luci-theme-bootstrap/luci-theme-design/g" feeds/luci/collections/luci-light/Makefile
 
-# 修改默认名称为HiH
-sed -i '/uci commit system/i\uci set system.@system[0].hostname='H-i-H'' package/lean/default-settings/files/zzz-default-settings
+# 修改默认名称为Router
+sed -i '/uci commit system/i\uci set system.@system[0].hostname='Router'' package/lean/default-settings/files/zzz-default-settings
 
-# 添加编译者信息HiH
+# 添加编译者信息H-i-H
 sed -i "s/LEDE/H-i-H build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # 设置为无密码

@@ -102,7 +102,7 @@
 - luci-app-unblockneteasemusic
 - luci-app-usb-printer
 - luci-app-watchcat=y
-......
+- ......
 
 <br>
 

@@ -81,7 +81,7 @@
 
 ✨ x86_64 vmdk固件集成vm-tools
 
-✨ x86_64包含iso QCOW2 VDI VMDK VHDX等格式镜像
+✨ x86_64包含ISO QCOW2 VDI VMDK VHDX等格式镜像
 
 <br>
 

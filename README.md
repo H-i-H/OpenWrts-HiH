@@ -1,5 +1,5 @@
 # Action Openwrt 云自动编译
-⏰ **每周五自动拉取最新源码自动编译**
+⏰ **每周六00:00:00自动拉取最新源码自动编译**
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -11,11 +11,11 @@
 
 <p align="center">
   <a href="https://github.com/H-i-H/OpenWrts-HiH">
-    <img src="./assets/images/action1.jpg" alt="Logo" width="500" />
+    <img src=".Images/homepage.jpg" alt="Logo" width="500" />
   </a>
   <h3 align="center">Openwrt/LEDE 云编译</h3>
   <p align="center">
-    👉 每周五定时自动拉取Openwrt最新源码编译，自动发布到 [<a herf="https://github.com/H-i-H/OpenWrts-HiH/releases"> Releases </a>]👈
+    👉 每周定时自动拉取Openwrt最新源码编译，自动发布到 [<a herf="https://github.com/H-i-H/OpenWrts-HiH/releases"> Releases </a>]👈
     <br />
     <a href="https://github.com/H-i-H/OpenWrts-HiH"><strong>探索本项目的文档 »</strong></a>
     <br />
@@ -71,9 +71,9 @@
 <br>
 
 ## 固件特性
-⏰ 固件编译改为`周更`(稳定为主，减少资源浪费)
+⏰ 固件LUCI采用LEDE源码的openwrt-24.10分支
 
-✨ 自带常用的插件
+✨ 固件添加了部分常用插件
 
 ✨ Arm集成所有openwrt的USB驱动
 
@@ -81,35 +81,27 @@
 
 ✨ x86_64 vmdk固件集成vm-tools
 
-✨ x86_64 iso格式镜像
+✨ x86_64包含iso QCOW2 VDI VMDK VHDX等格式镜像
 
 <br>
 
-## 自带插件
-🍕 默认插件
-- PassWall
-- AdGuard Home
-- Mentohust
-- luci-app-unblockmusic
-- luci-app-ddns
-- luci-app-pushbot (全能推送)
-- luci-app-onliner
+## 插件
+🍕 添加插件
+- 全组件PassWall
+- luci-app-adguardhome
+- luci-app-aria2
+- luci-app-diskman
+- luci-app-dockerman
+- luci-app-mentohust
+- luci-app-openlist
+- luci-app-qbittorrent
+- luci-app-socat
+- luci-app-tailscale
+- luci-app-transmission
 - luci-app-ttyd
-- luci-app-turboacc
-- luci-app-upnp
-- luci-app-netdata
-- luci-usb-printer
-- luci-app-nps
-- luci-app-frpc
-- luci-app-n2n
-- luci-app-syncdial (多播插件)
-- luci-app-turboacc
-- luci-app-kms
-- luci-app-docker
-- luci-app-serverchan
-- luci-app-control-timewol (定时wol唤醒)
-- luci-app-filebrowser
-- luci-app-nfs   
+- luci-app-unblockneteasemusic
+- luci-app-usb-printer
+- luci-app-watchcat=y
 ......
 
 <br>
@@ -133,8 +125,8 @@ filetree
 │  ├── RPi4.config
 │  ├── RPi5.config
 │  ├── Rockchip.config
-├── configure.sh (固件参数修改)
-├── package.sh (luci-app)
+├── feeds.sh (feeds.conf.default文件配置)
+├── config-package.sh (feeds后的插件、主题添加及参数配置)
 
 Tips:
 x86.conf | RPi4.config - 该类型配置文件主要为机型配置文件
@@ -143,29 +135,29 @@ x86.conf | RPi4.config - 该类型配置文件主要为机型配置文件
 
 ## 定制固件
 1. Fork 此项目
-2. 按需修改 ```configure.sh``` 和 ```package.sh``` 文件
+2. 按需修改 ```feeds.sh``` 和 ```config-package.sh``` 文件
 3. 上传你自己的 ```xx.config``` 配置文件到configs目录
 4. 添加或修改自己的``````xx.yml``````文件
 5. 最后根据个人喜好修改 ```update-checker.yml``` 需自行添加 ```Actions secrets``` (触发自动编译)
 
 ### 注意事项：
-📌 修改默认系统参数 👉 ```configure.sh```   
-📌 添加其它Luci插件 👉 ```package.sh```   
-📌 插件 / 应用配置文件 👉 ```configs/Standard.config```   
+📌 修改feeds.conf.default文件 👉 ```feeds.sh```   
+📌 添加其它Luci插件或修改参数 👉 ```config-package.sh```   
+📌 插件 / 应用配置文件 👉 ```configs/software.config```   
 <br>
 
 ## 固件预览
-**主界面(主题一)：**
-![主界面](./assets/images/openwrt.png)
+**主界面(luci-theme-alpha)：**
+![主界面](./Images/luci-theme-alpha.jpg)
 
 **服务/插件：**
-![服务/插件](./assets/images/service.png)
+![服务/插件](./Images/service.png)
 
 **网络：**
-![网络](./assets/images/network.png)
+![网络](./Images/network.jpg)
 
-**主界面：**
-![主界面](./assets/images/infinityfreedom-theme-main.png)
+**主界面(luci-theme-bootstrap)：**
+![主界面](./Images/luci-theme-bootstrap.png)
 
 
 ## 版权说明
@@ -173,10 +165,11 @@ x86.conf | RPi4.config - 该类型配置文件主要为机型配置文件
 该项目签署了MIT 授权许可，详情请参阅 [LICENSE](https://github.com/H-i-H/OpenWrts-HiH/blob/main/LICENSE)
 
 
-## 项目支持
+## 鸣谢
 - [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
 - [coolsnowwolf/lede](https://github.com/coolsnowwolf/lede)
 - [bigbugcc/OpenWrts](https://github.com/bigbugcc/OpenWrts)
+- [derisamedia/luci-theme-alpha](https://github.com/derisamedia/luci-theme-alpha)
 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/H-i-H/OpenWrts-HiH.svg)](https://starchart.cc/H-i-H/OpenWrts-HiH)

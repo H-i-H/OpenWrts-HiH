@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/H-i-H/OpenWrts-HiH">
-    <img src=".Images/homepage.jpg" alt="Logo" width="500" />
+    <img src="./Images/homepage.jpg" alt="Logo" width="500" />
   </a>
   <h3 align="center">Openwrt/LEDE 云编译</h3>
   <p align="center">

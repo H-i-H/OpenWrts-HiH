@@ -13,7 +13,7 @@ env:
   CONFIG_FILE: configs/RPi3B.config
   SYS_CONF_SH: feeds.sh
   PACKS: config-package.sh
-  EXTEND_DRIVER: true
+  EXTEND_DRIVER: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true

@@ -110,7 +110,6 @@ filetree
 │  ├── Rockchip.yml
 │  ├── RaspberryPi3.yml
 │  ├── RaspberryPi4.yml
-│  ├── RaspberryPi5.yml
 │  ├── x86_64.yml
 │  ├── update-checker.yml
 ├── /configs/ (配置文件目录)   
@@ -118,7 +117,6 @@ filetree
 │  |  ├── xxx.config (配置)
 │  ├── RPi3.config
 │  ├── RPi4.config
-│  ├── RPi5.config
 │  ├── Rockchip.config
 ├── feeds.sh (feeds.conf.default文件配置)
 ├── config-package.sh (feeds后的插件、主题添加及参数配置)
